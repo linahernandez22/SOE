@@ -1,0 +1,180 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    background-color: #f0f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s;
+}
+section.dark
+{
+    background: #24292d;
+}
+section .tarjeta
+{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .025);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s;
+}
+section.dark .tarjeta
+{
+    background: #323840;
+}
+section .tarjeta .cont,
+section .tarjeta .imgText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .tarjeta .cont .imgText .imgCaja
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+section .tarjeta .imgText .imgCaja img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .tarjeta .imgText h3
+{
+    font-weight: 500;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+    color:darkgreen ;
+}
+section .tarjeta .imgText h3 span
+{
+    font-weight: 400;
+    color: #777;
+    font-size: .75em;
+}
+section.dark .tarjeta .imgText h3 span
+{
+    color: #ccc;
+}
+section .tarjeta .redes
+{
+    display: flex;
+}
+section .tarjeta .redes li
+{
+    list-style: none;
+}
+section .tarjeta .redes li a
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #e9f5ff;
+    color: darkgreen;
+    margin:  0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .5s;
+}
+section.dark .tarjeta .redes li a
+{
+    background-color: #404852;
+}
+section .tarjeta .redes li a:hover svg
+{
+    fill: #fff;
+    color: #fff;
+}
+section .tarjeta .redes li a svg{
+    position: relative;
+    z-index: 1000;
+    width: 25px;
+    fill: darkgreen;
+}
+section .tarjeta .redes li a::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: darkgreen;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .5s;
+}
+section .tarjeta .redes li a:hover:before
+{
+    transform: scale(1);
+}
+.boton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e9f5ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition:background .5s;
+}
+section.dark .boton{
+    background-color: #404852;
+}
+.boton::before
+{
+    content: '\f186';
+    font-family: fontAwesome;
+    color: darkgreen;
+}
+section.dark .boton:before
+{
+    content: '\f185';
+    color: #fff;
+}
+
+.bt{
+    margin-top: 15px;
+    border:none ;
+    color:rgb(255, 255, 255);
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: darkgreen;
+}
+.container-user {
+   top: 30%;
+   width: 90%;
+
+}
